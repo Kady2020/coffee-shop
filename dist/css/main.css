@@ -1,0 +1,243 @@
+/*==================== RESET STYLES ====================*/
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  font-size: 14px;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+ul li,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/*==================== RESET STYLES ====================*/
+/*==================== FONTS ====================*/
+@font-face {
+  font-family: AlegreyaSans;
+  font-display: swap;
+  src: url("../fonts/AlegreyaSans-Regular.woff2") format("woff2"), url("../fonts/AlegreyaSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Cedarville;
+  font-display: swap;
+  src: url("../fonts/Cedarville-Cursive.woff2") format("woff2"), url("../fonts/Cedarville-Cursive.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: GeorgeRoundedRegular;
+  font-display: swap;
+  src: url("../fonts/GeorgeRoundedRegular.woff2") format("woff2"), url("../fonts/GeorgeRoundedRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: JosefinSans;
+  font-display: swap;
+  src: url("../fonts/JosefinSans-Bold.woff2") format("woff2"), url("../fonts/JosefinSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+/*==================== FONTS ====================*/
+/*==================== VARIABLES ====================*/
+/*==================== VARIABLES ====================*/
+/*==================== MIXINS ====================*/
+/*==================== MIXINS ====================*/
+/*==================== BASIC PARAMETERS ====================*/
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 767.98px) {
+  body.lock {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+.main__class:not(:last-child), .main__class:not(:last-child) {
+  margin-bottom: 60px;
+}
+@media (max-width: 1200px) {
+  .main__class:not(:last-child), .main__class:not(:last-child) {
+    margin-bottom: calc(40px + 20 * ((100vw - 320px) / 880));
+  }
+}
+.main:not(:last-child) {
+  margin-bottom: 60px;
+}
+@media (max-width: 1200px) {
+  .main:not(:last-child) {
+    margin-bottom: calc(40px + 20 * ((100vw - 320px) / 880));
+  }
+}
+
+/*==================== BASIC PARAMETERS ====================*/
+/*==================== REPEAT BLOCK ====================*/
+[class*=__container] {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.ibg {
+  position: relative;
+}
+.ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.title-l,
+.title-m,
+.title-s {
+  font-family: "JosefinSans", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+}
+.title-l:not(:last-child),
+.title-m:not(:last-child),
+.title-s:not(:last-child) {
+  margin: 0 0 24px 0;
+}
+
+.title-l {
+  font-size: 60px;
+}
+@media (max-width: 1200px) {
+  .title-l {
+    font-size: calc(50px + 10 * ((100vw - 320px) / 880));
+  }
+}
+
+.title-m {
+  font-size: 38px;
+}
+
+.title-s {
+  font-size: 28px;
+}
+
+.txt {
+  font-size: 19px;
+  font-family: "AlegreyaSans", sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #444a4a;
+}
+@media (max-width: 1200px) {
+  .txt {
+    font-size: calc(17px + 2 * ((100vw - 320px) / 880));
+  }
+}
+
+.txt-decor {
+  font-size: 28px;
+  font-family: "Cedarville", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #444a4a;
+}
+.txt-decor_vertical {
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+}
+
+/*==================== REPEAT BLOCK ====================*/

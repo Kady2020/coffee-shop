@@ -1,0 +1,154 @@
+/*==================== RESET STYLES ====================*/
+@import 'import/reset.scss';
+/*==================== RESET STYLES ====================*/
+
+/*==================== FONTS ====================*/
+@import 'fonts.scss';
+/*==================== FONTS ====================*/
+
+/*==================== VARIABLES ====================*/
+$maxWidthLayout: 1440;
+$maxWidthContainer: 1200;
+$JoSa: 'JosefinSans', sans-serif;
+$AlSa: 'AlegreyaSans', sans-serif;
+$CeCu: 'Cedarville', sans-serif;
+$GeRo: 'GeorgeRoundedRegular', sans-serif;
+$grayColor: #444a4a;
+$greenColor: #2d635e;
+$blueBg: #e3ebe7;
+$greenBg: #fae9e0;
+/*==================== VARIABLES ====================*/
+
+/*==================== MIXINS ====================*/
+// responsive value
+@mixin respValue($property, $startSize, $minSize, $type) {
+  $addSize: $startSize - $minSize;
+  @if $type==1 {
+    //Только если меньше контейнера
+    #{$property}: $startSize + px;
+    @media (max-width: #{$maxWidthContainer + px}) {
+      #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}));
+    }
+  } @else if $type==2 {
+    //Только если больше контейнера
+    #{$property}: $startSize + px;
+    @media (min-width: #{$maxWidthContainer + px}) {
+      #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthLayout - 320}));
+    }
+  } @else {
+    //Всегда
+    #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthLayout - 320}));
+  }
+}
+// snippet (rv)
+// responsive value
+/*==================== MIXINS ====================*/
+
+/*==================== BASIC PARAMETERS ====================*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @media (max-width: 767.98px) {
+    &.lock {
+      overflow: hidden;
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.main {
+  flex: 1 1 auto;
+
+  &__class,
+  &__class {
+    &:not(:last-child) {
+      @include respValue('margin-bottom', 60, 40, 1);
+    }
+  }
+
+  &:not(:last-child) {
+    @include respValue('margin-bottom', 60, 40, 1);
+  }
+}
+/*==================== BASIC PARAMETERS ====================*/
+
+/*==================== REPEAT BLOCK ====================*/
+//! Container
+[class*='__container'] {
+  width: 100%;
+  max-width: $maxWidthContainer + px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+//! Responsive Image
+.ibg {
+  position: relative;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+
+//! Title Block
+.title-l,
+.title-m,
+.title-s {
+  font-family: $JoSa;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+
+  &:not(:last-child) {
+    margin: 0 0 24px 0;
+  }
+}
+
+.title-l {
+  @include respValue('font-size', 60, 50, 1);
+}
+
+.title-m {
+  font-size: 38px;
+}
+
+.title-s {
+  font-size: 28px;
+}
+
+//! Text Block
+.txt {
+  @include respValue('font-size', 19, 17, 1);
+  font-family: $AlSa;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #444a4a;
+}
+
+//! Text Decor
+.txt-decor {
+  font-size: 28px;
+  font-family: $CeCu;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #444a4a;
+
+  &_vertical {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+  }
+}
+/*==================== REPEAT BLOCK ====================*/
