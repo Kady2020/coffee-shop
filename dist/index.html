@@ -23,16 +23,100 @@
     <!-- HEADER -->
     <header class="header">
   <div class="header__container">
+    <div class="header__body">
+      <a href="#main" class="header__logo logo">
+        <div class="logo__icon">
+          <img src="img/header/logo.svg" alt="Logo Icon">
+        </div>
+        <div class="logo__text">
+          samwayle
+        </div>
+      </a>
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#about" class="menu__link link">about us</a>
+          </li>
+          <li class="menu__item">
+            <a href="#promotion" class="menu__link link">promotion</a>
+          </li>
+          <li class="menu__item">
+            <a href="#shop" class="menu__link link">shop</a>
+          </li>
+          <li class="menu__item">
+            <a href="#shop" class="menu__link link">contacts</a>
+          </li>
+          <li class="menu__item menu__item_icons">
+            <a href="#" class="menu__icon">
+              <img src="img/header/instagram.svg" alt="Menu Icon">
+            </a>
+            <a href="#" class="menu__icon">
+              <img src="img/header/facebook.svg" alt="Menu Icon">
+            </a>
+            <a href="#" class="menu__icon">
+              <img src="img/header/twitter.svg" alt="Menu Icon">
+            </a>
+          </li>
+          <li class="menu__item menu__item_button">
+            <butoon class="menu__button btn">Contact Us</butoon>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__burger burger" type="button">
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
 
 
     <!-- PAGE -->
     <main id="main" class="main">
-      <button class="btn">
-        <span class="btn__text">Contact Us</span>
-        <span class="btn__waves"></span>
-      </button>
+
+      <!-- todo: INTRO -->
+      <section class="main__intro intro">
+        <div class="intro__container">
+          <div class="intro__body">
+            <div class="intro__content">
+              <p class="intro__text txt-decor">
+                Drink coffee, enjoy with Samwyle
+              </p>
+              <h1 class="intro__title title-l">
+                Coffee Shop
+              </h1>
+              <a href="#" class="intro__button btn">Order here</a>
+            </div>
+            <div class="intro__right-block">
+              <div class="intro__image-block">
+                <div class="intro__image ibg">
+                  <img src="img/intro/intro-img-001.svg" alt="Coffee Grinder Image">
+                </div>
+              </div>
+              <div class="intro__vertical-block vertical-block">
+                <div class="vertical-block__icons">
+                  <a href="#" class="vertical-block__icon">
+                    <img src="img/header/instagram.svg" alt="Instagram Icon">
+                  </a>
+                  <a href="#" class="vertical-block__icon">
+                    <img src="img/header/facebook.svg" alt="Facebook Icon">
+                  </a>
+                  <a href="#" class="vertical-block__icon">
+                    <img src="img/header/twitter.svg" alt="Twitter Icon">
+                  </a>
+                </div>
+                <div class="vertical-block__text">Follow us</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__about about">
+        <div class="about__container">
+          <section id="about" class="about__top"></section>
+          <section id="promotion" class="about__bottom"></section>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->
