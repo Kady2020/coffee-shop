@@ -74,7 +74,19 @@ body {
 
   &__intro {
     &:not(:last-child) {
-      @include respValue('margin-bottom', 90, 70, 1);
+      @include respValue('margin-bottom', 180, 90, 1);
+    }
+  }
+
+  &__about {
+    &:not(:last-child) {
+      margin: 0 0 90px 0;
+    }
+  }
+
+  &__promotion {
+    &:not(:last-child) {
+      margin: 0 0 60px 0;
     }
   }
 
@@ -537,6 +549,131 @@ body {
   &__icon {
     img {
       max-width: 32px;
+    }
+  }
+}
+
+//todo: ABOUT
+.about {
+  &__body {
+    display: grid;
+    gap: 60px;
+
+    @media (min-width: 878.98px) {
+      grid-template: 1fr / minmax(auto, 392px) minmax(auto, 646px);
+      align-items: center;
+      gap: 90px;
+    }
+  }
+
+  &__image {
+    position: relative;
+
+    @media (max-width: 878.98px) {
+      justify-self: center;
+      max-width: 600px;
+      width: 100%;
+    }
+  }
+
+  &__img {
+    padding: 0 0 86.74% 0;
+
+    img {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 878.98px) {
+      img {
+        &:nth-child(1) {
+          display: none;
+        }
+        &:nth-child(2) {
+          display: block;
+          object-fit: contain;
+        }
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      padding: 0 0 92.99% 0;
+    }
+  }
+
+  &__txt {
+    position: absolute;
+    top: -20px;
+    left: -6px;
+
+    @media (max-width: 878.98px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    &:not(:last-child) {
+      margin: 0 0 25px 0;
+    }
+  }
+
+  &__text {
+    &:not(:last-child) {
+      margin: 0 0 15px 0;
+    }
+  }
+}
+
+//todo: PROMOTION
+.promotiom {
+  &__body {
+    display: grid;
+    gap: 60px;
+
+    @media (min-width: 878.98px) {
+      grid-template: 1fr / minmax(auto, 614px) minmax(auto, 410px);
+      align-items: center;
+      justify-content: space-between;
+      gap: 90px;
+    }
+  }
+
+  &__content {
+    > *:not(:last-child) {
+      margin: 0 0 25px 0;
+    }
+
+    @media (max-width: 878.98px) {
+      order: 2;
+    }
+  }
+
+  &__image {
+    position: relative;
+
+    @media (max-width: 878.98px) {
+      order: 1;
+      justify-self: center;
+      max-width: 600px;
+      width: 100%;
+    }
+  }
+
+  &__img {
+    padding: 0 0 79% 0;
+
+    @media (max-width: 878.98px) {
+    }
+  }
+
+  &__txt {
+    position: absolute;
+    top: 6px;
+    right: -6px;
+
+    @media (max-width: 878.98px) {
+      display: none;
     }
   }
 }

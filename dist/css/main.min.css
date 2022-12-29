@@ -153,12 +153,18 @@ body {
   flex: 1 1 auto;
 }
 .main__intro:not(:last-child) {
-  margin-bottom: 90px;
+  margin-bottom: 180px;
 }
 @media (max-width: 1200px) {
   .main__intro:not(:last-child) {
-    margin-bottom: calc(70px + 20 * ((100vw - 320px) / 880));
+    margin-bottom: calc(90px + 90 * ((100vw - 320px) / 880));
   }
+}
+.main__about:not(:last-child) {
+  margin: 0 0 90px 0;
+}
+.main__promotion:not(:last-child) {
+  margin: 0 0 60px 0;
 }
 .main:not(:last-child) {
   margin-bottom: 90px;
@@ -578,4 +584,107 @@ body {
 }
 .vertical-block__icon img {
   max-width: 32px;
+}
+
+.about__body {
+  display: grid;
+  gap: 60px;
+}
+@media (min-width: 878.98px) {
+  .about__body {
+    grid-template: 1fr/minmax(auto, 392px) minmax(auto, 646px);
+    align-items: center;
+    gap: 90px;
+  }
+}
+.about__image {
+  position: relative;
+}
+@media (max-width: 878.98px) {
+  .about__image {
+    justify-self: center;
+    max-width: 600px;
+    width: 100%;
+  }
+}
+.about__img {
+  padding: 0 0 86.74% 0;
+}
+.about__img img:nth-child(2) {
+  display: none;
+}
+@media (max-width: 878.98px) {
+  .about__img img:nth-child(1) {
+    display: none;
+  }
+  .about__img img:nth-child(2) {
+    display: block;
+    object-fit: contain;
+  }
+}
+@media (max-width: 767.98px) {
+  .about__img {
+    padding: 0 0 92.99% 0;
+  }
+}
+.about__txt {
+  position: absolute;
+  top: -20px;
+  left: -6px;
+}
+@media (max-width: 878.98px) {
+  .about__txt {
+    display: none;
+  }
+}
+.about__title:not(:last-child) {
+  margin: 0 0 25px 0;
+}
+.about__text:not(:last-child) {
+  margin: 0 0 15px 0;
+}
+
+.promotiom__body {
+  display: grid;
+  gap: 60px;
+}
+@media (min-width: 878.98px) {
+  .promotiom__body {
+    grid-template: 1fr/minmax(auto, 614px) minmax(auto, 410px);
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+  }
+}
+.promotiom__content > *:not(:last-child) {
+  margin: 0 0 25px 0;
+}
+@media (max-width: 878.98px) {
+  .promotiom__content {
+    order: 2;
+  }
+}
+.promotiom__image {
+  position: relative;
+}
+@media (max-width: 878.98px) {
+  .promotiom__image {
+    order: 1;
+    justify-self: center;
+    max-width: 600px;
+    width: 100%;
+  }
+}
+.promotiom__img {
+  padding: 0 0 79% 0;
+}
+.promotiom__txt {
+  position: absolute;
+  top: 6px;
+  right: -6px;
+}
+@media (max-width: 878.98px) {
+  .promotiom__txt {
+    display: none;
+  }
 }
