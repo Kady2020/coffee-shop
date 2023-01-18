@@ -583,33 +583,28 @@ body {
     }
   }
 
-  &__img {
+  &__img-m {
     padding: 0 0 86.74% 0;
 
-    img {
-      &:nth-child(2) {
-        display: none;
-      }
-    }
-
     @media (max-width: 878.98px) {
-      img {
-        &:nth-child(1) {
-          display: none;
-        }
-        &:nth-child(2) {
-          display: block;
-          object-fit: contain;
-        }
-      }
-    }
-
-    @media (max-width: 767.98px) {
-      padding: 0 0 92.99% 0;
+      display: none;
     }
   }
 
-  &__txt {
+  &__img-s {
+    display: none;
+
+    @media (max-width: 878.98px) {
+      display: block;
+      padding: 0 0 92.99% 0;
+
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  &__txt-decor {
     position: absolute;
     top: -20px;
     left: -6px;
@@ -625,7 +620,7 @@ body {
     }
   }
 
-  &__text {
+  &__txt {
     &:not(:last-child) {
       margin: 0 0 15px 0;
     }
