@@ -11,7 +11,7 @@
   <meta name="author" content="Kolosov Arkady">
   <!-- <meta name="keywords" content=""> -->
   <!-- <meta name="description" content=""> -->
-  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/main.min.css?_v=20230118184216">
   <link rel="shortcut icon" href="img/shortcut.svg">
 </head>
 
@@ -117,8 +117,8 @@
           <div class="about__body">
             <div class="about__image">
               <div class="about__img ibg">
-                <img src="img/about/about-img-001.png" alt="About Us">
-                <img src="img/about/about-img-002.png" alt="About Us">
+                <picture><source srcset="img/about/about-img-001.webp" type="image/webp"><img src="img/about/about-img-001.png" alt="About Us"></picture>
+                <picture><source srcset="img/about/about-img-002.webp" type="image/webp"><img src="img/about/about-img-002.png" alt="About Us"></picture>
               </div>
               <span class="about__txt txt-decor txt-decor_vertical">
                 About us
@@ -164,7 +164,7 @@
             </div>
             <div class="promotiom__image">
               <div class="promotiom__img ibg">
-                <img src="img/promotion/promotion-img-001.png" alt="Promotion Image">
+                <picture><source srcset="img/promotion/promotion-img-001.webp" type="image/webp"><img src="img/promotion/promotion-img-001.png" alt="Promotion Image"></picture>
               </div>
               <span class="promotiom__txt txt-decor txt-decor_vertical">
                 Promotion
@@ -174,22 +174,169 @@
         </div>
       </section>
 
+      <!-- todo: SHOP -->
+      <section class="main__shop shop">
+        <div class="shop__slider slider swiper">
+          <div class="slider__wrapper swiper-wrapper">
+            <div class="slider__slide swiper-slide">
+              <div class="slider__items">
+                <div class="slider__item">
+                  <h2 class="slider__title title-s">Americano</h2>
+                  <p class="slider__text txt">
+                    The name Latte (from Italian “milk”) speaks about the main ingredient of the drink. It is
+                    recommended to take fat milk -
+                    at least 3.2%. In addition to it, milk foam.
+                  </p>
+                  <button class="slider__button btn">Order now</button>
+                </div>
+                <div class="slider__item">
+                  <h2 class="slider__title title-s">Latte</h2>
+                  <p class="slider__text txt">
+                    The name Latte (from Italian “milk”) speaks about the main ingredient of the drink. It is
+                    recommended to take fat milk -
+                    at least 3.2%. In addition to it, milk foam.
+                  </p>
+                  <button class="slider__button btn">Order now</button>
+                </div>
+                <div class="slider__item">
+                  <h2 class="slider__title title-s">Espresso</h2>
+                  <p class="slider__text txt">
+                    Espresso - black coffee made in a coffee machine or a special coffee machine, where hot water is
+                    passed through pressed
+                    ground beans at a pressure.
+                  </p>
+                  <button class="slider__button btn">Order now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__slide swiper-slide">
+              <div class="slider__items">
+                <div class="slider__item">
+                  <h2 class="slider__title title-s">Americano</h2>
+                  <p class="slider__text txt">
+                    The name Latte (from Italian “milk”) speaks about the main ingredient of the drink. It is
+                    recommended to take fat milk -
+                    at least 3.2%. In addition to it, milk foam.
+                  </p>
+                  <button class="slider__button btn">Order now</button>
+                </div>
+                <div class="slider__item">
+                  <h2 class="slider__title title-s">Latte</h2>
+                  <p class="slider__text txt">
+                    The name Latte (from Italian “milk”) speaks about the main ingredient of the drink. It is
+                    recommended to take fat milk -
+                    at least 3.2%. In addition to it, milk foam.
+                  </p>
+                  <button class="slider__button btn">Order now</button>
+                </div>
+                <div class="slider__item">
+                  <h2 class="slider__title title-s">Espresso</h2>
+                  <p class="slider__text txt">
+                    Espresso - black coffee made in a coffee machine or a special coffee machine, where hot water is
+                    passed through pressed
+                    ground beans at a pressure.
+                  </p>
+                  <button class="slider__button btn">Order now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__slide swiper-slide">
+              <div class="slider__items">
+                <div class="slider__item">
+                  <h2 class="slider__title title-s">Americano</h2>
+                  <p class="slider__text txt">
+                    The name Latte (from Italian “milk”) speaks about the main ingredient of the drink. It is
+                    recommended to take fat milk -
+                    at least 3.2%. In addition to it, milk foam.
+                  </p>
+                  <button class="slider__button btn">Order now</button>
+                </div>
+                <div class="slider__item">
+                  <h2 class="slider__title title-s">Latte</h2>
+                  <p class="slider__text txt">
+                    The name Latte (from Italian “milk”) speaks about the main ingredient of the drink. It is
+                    recommended to take fat milk -
+                    at least 3.2%. In addition to it, milk foam.
+                  </p>
+                  <button class="slider__button btn">Order now</button>
+                </div>
+                <div class="slider__item">
+                  <h2 class="slider__title title-s">Espresso</h2>
+                  <p class="slider__text txt">
+                    Espresso - black coffee made in a coffee machine or a special coffee machine, where hot water is
+                    passed through pressed
+                    ground beans at a pressure.
+                  </p>
+                  <button class="slider__button btn">Order now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- todo: CONTACTS -->
+      <section class="main__contacts contacts">
+        <div class="contacts__container">
+          <div class="contacts__body">
+            <div class="contacts__map-container">
+              <div class="contacts__map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12097.222694099006!2d-74.01062273639177!3d40.71128696157935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a25b972c931%3A0x432a2d2146a10682!2z0KLRgy3QkdGA0LjQtNC20LXRgSwg0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1674053615414!5m2!1sru!2sru"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <span class="contacts__txt-decor txt-decor txt-decor_vertical">
+                About us
+              </span>
+            </div>
+            <div class="contacts__address">
+              <h2 class="contacts__title title-m">
+                Our address
+              </h2>
+              <p class="contacts__txt txt">
+                110 St-Cathedral Pkwy Station
+              </p>
+              <p class="contacts__txt txt">
+                4310 94th St, Flushing
+              </p>
+              <p class="contacts__txt txt">
+                94-54 Corona Ave., Elmhurst
+              </p>
+              <p class="contacts__txt txt">
+                5627 Van Doren St, Queens
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-  <div class="footer__container"></div>
+  <div class="footer__container">
+    <div class="footer__body">
+      2020 (c) - Samwyle bandtitos
+    </div>
+  </div>
 </footer>
 
 
   </div>
 
   <!-- IONICONS -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js?_v=20230118184216"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js?_v=20230118184216"></script>
 
   <!-- MAIN.JS -->
-  <script src="js/main.min.js"></script>
+  <script src="js/main.min.js?_v=20230118184216"></script>
 </body>
 
 </html>
